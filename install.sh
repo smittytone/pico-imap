@@ -4,6 +4,9 @@
 TARGET_PICO="/Volumes/CIRCUITPY"
 
 # Copy required libraries
+if [[ ! -e "${TARGET_PICO}/Lib" ]]; then
+    mdkir "${TARGET_PICO}/Lib"
+fi
 cp ./HT16K33-Python/ht16k33.py "${TARGET_PICO}/Lib/ht16k33.py"
 cp ./HT16K33-Python/ht16k33segment14.py "${TARGET_PICO}/Lib/ht16k33segment14.py"
 
