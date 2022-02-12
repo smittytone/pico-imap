@@ -1,0 +1,3 @@
+[submodule "HT16K33-Python"]
+	path = HT16K33-Python
+	url = https://github.com/smittytone/HT16K33-Python.git
