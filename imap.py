@@ -14,7 +14,7 @@ CONSTANTS
 '''
 IMAP_HOST = ""
 IMAP_PORT = 993
-RECHECK_PERIOD_S = 5 * 60
+RECHECK_PERIOD_S = 5 * 60   # Every 5 minutes
 
 
 '''
@@ -22,7 +22,8 @@ Add a `secrets.py` to your filesystem that has a dictionary called `secrets`
 with the following keys:
 * "mail", "password" -- your email credentials
 * "dev"              -- path/to/your/device
-* "host"             -- your IMAP server
+* "host"             -- your IMAP server URL
+* "port"             -- your IMAP server port number
 DO NOT share that file or commit it into Git or other source control.
 '''
 try:
@@ -32,6 +33,7 @@ try:
     if not "dev" in secrets: raise
     if not "host" in secrets: raise
     IMAP_HOST = secrets["host"]
+    if "port" in secrets: IMAP_PORT = secrets["port"]
 except ImportError:
     print("[ERROR] Email credentials are stored in `secrets.py`, please add them there")
     raise
