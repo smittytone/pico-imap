@@ -13,3 +13,7 @@ cp ./HT16K33-Python/ht16k33segment14.py "${TARGET_PICO}/Lib/ht16k33segment14.py"
 # Copy application code
 cp ./boot.py "${TARGET_PICO}/boot.py"
 cp ./code.py "${TARGET_PICO}/code.py"
+
+# Copy app and secrets files
+cp ./imap.py ~/imap.py
+cp ./secrets.py ~/secrets.py
