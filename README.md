@@ -2,7 +2,7 @@
 
 A desktop email inbox status display based on the [Raspberry Pi RP2040](https://www.raspberrypi.com/products/rp2040/) — on the [Adafruit Trinkey RP2040](https://www.adafruit.com/product/5056) — and two [SparkFun Qwiic Alphanumeric Displays](https://www.sparkfun.com/products/16916).
 
-![The Trinkey email status indicator](./images/device.jpg)
+![The Trinkey email status indicator](./images/device2.jpg)
 
 ## Requirements
 
